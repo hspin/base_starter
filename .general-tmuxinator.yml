@@ -7,7 +7,7 @@ startup_window: code
 windows:
   - code:
       panes:
-        - #
+        - tres333
   - server:
       layout: even-vertical
       panes:
