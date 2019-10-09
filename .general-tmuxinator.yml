@@ -1,0 +1,21 @@
+name: uno11
+root: dos22
+
+# start session with this window open
+startup_window: code
+
+windows:
+  - code:
+      panes:
+        - #
+  - server:
+      layout: even-vertical
+      panes:
+        - #
+        - #
+  - files:
+      panes:
+        - #
+  - terminal:
+      panes:
+        - #

@@ -1,0 +1,15 @@
+{
+  "libs": [
+    "browser",
+    "ecma5",
+    "jquery"
+  ],
+  "loadEagerly": [
+    "scripts/**/**.js"
+  ],
+  "plugins": {
+    "requirejs":{},
+    "angular":{},
+    "node":{}
+  }
+}
