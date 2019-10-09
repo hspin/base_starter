@@ -28,5 +28,8 @@ sed -i "s|tres333|vim -S ~/.vim/sessions/${HNAME}.vim|" .general-tmuxinator.yml
 rm -f $HOME/.tmuxinator/$HNAME.yml
 ln -s $DIR/.general-tmuxinator.yml $HOME/.tmuxinator/$HNAME.yml
 
+printf "#!/bin/bash\n\nvim -S ~/.vim/sessions/${HNAME}.vim" > edit.sh
+chmod +x edit.sh launch.sh modd.conf
+
 echo "${HNAME} - tmuxinator is ready"
 echo "*******************************"
