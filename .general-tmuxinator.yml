@@ -11,11 +11,16 @@ windows:
   - server:
       layout: even-vertical
       panes:
-        - #
-        - #
+        - cd layout
+        - cd layout
+  - build:
+      layout: even-vertical
+      panes:
+        - quatro444
+        - quatro444
   - files:
       panes:
-        - #
+        - quatro444
   - terminal:
       panes:
         - #
