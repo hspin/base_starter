@@ -29,11 +29,11 @@ DIR=./node_modules/prettier-plugin-svelte
 
 if [ ! -d "${DIR}" ]; then
   echo "install support"
-  npm install --save-dev prettier eslint prettier-plugin-svelte eslint-plugin-svelte3 babel-eslint
-  BACK_PID=$!
-  while kill -0 $BACK_PID ; do
+  npm install --save-dev prettier eslint prettier-plugin-svelte eslint-plugin-svelte3 babel-eslint &
+  CBACK_PID=$!
+  while kill -0 $CBACK_PID ; do
     echo "Process is still active..."
-    sleep 1
+    sleep 2
     # You can add a timeout here if you want
   done
   sleep 1
