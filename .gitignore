@@ -76,7 +76,6 @@ typings/
 # builds
 public/bundle.*
 
-# Mantis Starter
 # build
 # public
 # layout/dist

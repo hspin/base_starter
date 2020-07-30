@@ -1,0 +1,32 @@
+global-reset()
+
+@import 's-grid-settings'
+@import 's-grid-functions'
+
+*
+  box-sizing border-box
+
+p
+  font-size 30px
+  color red
+div
+  margin-top 20px
+span
+  color red
+
+section
+  border 1px blue solid
+  center(90%)
+  height rem-calc(200)
+  +desktop()
+    center(1200px)
+  grid(cells-align: 'center')
+  div
+    border 1px red solid
+    padding rem-calc(15)
+    stack()
+    +desktop()
+      cell(1,2)
+
+::placeholder
+  color gray
