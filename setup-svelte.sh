@@ -101,8 +101,13 @@ if [ ! -f "${BAK}" ]; then
   echo "done"
   sed -i 's/console.log(.*)\;//g' ./node_modules/prettier-plugin-svelte/plugin.js
   printf 'npm run dev'
+  echo ""
+  echo ""
   exit
 fi
 echo "already ready"
 
 printf 'npm run dev'
+
+echo ""
+echo ""
