@@ -33,7 +33,7 @@ if [ ! -d "${DIR}" ]; then
   CBACK_PID=$!
   while kill -0 $CBACK_PID ; do
     echo "Process is still active..."
-    sleep 2
+    sleep 1
     # You can add a timeout here if you want
   done
   sleep 1
