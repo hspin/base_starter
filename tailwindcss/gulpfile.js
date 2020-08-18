@@ -35,18 +35,9 @@ gulp.task('purgecss', () => {
     .src('dist/**/*.css')
     .pipe(
       purgecss({
-        content: ['./dist/**/*.html', './dist/**/*.vue', './dist/**/*.jsx'],
-        extractors: [
-          {
-            extractor: class {
-              static extract(content) {
-                return content.match(/[A-Za-z0-9-_:/]+/g) || [];
-              }
-            },
-            // Specify all of the extensions of your template files
-            extensions: ['html', 'vue', 'jsx' /* etc. */],
-          },
-        ],
+        content: ['./dist/**/*.html', './dist/**/*.js'],
+        defaultExtractor: content =>
+        content.match(/[A-Za-z0-9-_:/]+/g) || []
       }),
     )
     .pipe(csso())
