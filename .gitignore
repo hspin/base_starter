@@ -70,6 +70,9 @@ typings/
 # dotenv environment variables file
 .env
 
+# local environment variables file
+.envrc
+
 # next.js build output
 .next
 
