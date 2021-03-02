@@ -17,6 +17,7 @@
         "always"
     ],
     "no-console": 0,
+    "no-unused-vars": 0,
     "keyword-spacing": 2
   },
   "env": {
@@ -25,6 +26,7 @@
     "browser": true
   },
   "parserOptions": {
+      "ecmaVersion": 2018,
       "sourceType": "module"
   },
   "extends": "eslint:recommended"
