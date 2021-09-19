@@ -1,0 +1,3 @@
+export TESTVARITEST=123
+layout node
+use vim
