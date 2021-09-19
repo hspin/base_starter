@@ -1,5 +1,6 @@
-export TESTVARITEST=123
 export DIRENV_EXTRA_VIMRC=$PWD/.vimrc-proj
 layout node
-use vim
-eval "$(lorri direnv)"
+# PATH_add ./src/tools
+if [[ -f "./shell.nix" ]]; then
+    eval "$(lorri direnv)"
+fi
