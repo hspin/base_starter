@@ -70,8 +70,13 @@ typings/
 # dotenv environment variables file
 .env
 
+# Python Virtual Environment
+venv
+
 # local environment variables file
 .envrc
+
+.direnv
 
 # next.js build output
 .next

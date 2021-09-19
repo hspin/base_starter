@@ -1,3 +1,5 @@
 export TESTVARITEST=123
+export DIRENV_EXTRA_VIMRC=$PWD/.vimrc-proj
 layout node
 use vim
+eval "$(lorri direnv)"
