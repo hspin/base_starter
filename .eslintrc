@@ -1,33 +1,22 @@
 {
-  "rules": {
-    "indent": [
-        2,
-        2
-    ],
-    "quotes": [
-        2,
-        "single"
-    ],
-    "linebreak-style": [
-        2,
-        "unix"
-    ],
-    "semi": [
-        2,
-        "always"
-    ],
-    "no-console": 0,
-    "no-unused-vars": 0,
-    "keyword-spacing": 2
-  },
+  "root": true,
   "env": {
-    "es6": true,
+    "es2021": true,
     "node": true,
     "browser": true
   },
-  "parserOptions": {
-      "ecmaVersion": 2018,
-      "sourceType": "module"
-  },
-  "extends": "eslint:recommended"
+  "extends": ["eslint:recommended", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "camelcase": "error",
+    "spaced-comment": "error",
+    "quotes": ["error", "single"],
+    "no-duplicate-imports": "error",
+    "indent": [ 2, 2 ],
+    "linebreak-style": [ 2, "unix" ],
+    "semi": [ "error", "always" ],
+    "no-console": 0,
+    "no-unused-vars": 0
+  }
 }
