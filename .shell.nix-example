@@ -1,11 +1,22 @@
 { pkgs ? import <nixpkgs> {} }:
 
 pkgs.mkShell {
-  buildInputs = [
+  nativeBuildInputs = [
     pkgs.hello
     pkgs.figlet
+    pkgs.just
 
     # keep this line if you use bash
     pkgs.bashInteractive
+
+    # node setup
+    pkgs.nodejs
+    pkgs.nodePackages.pnpm
   ];
+
+  shellHook = ''
+    echo nix shell!
+  '';
+
+  # MY_ENVIRONMENT_VARIABLE = "";
 }

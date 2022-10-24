@@ -2,5 +2,5 @@ export DIRENV_EXTRA_VIMRC=$PWD/.vimrc-proj
 layout node
 # PATH_add ./src/tools
 if [[ -f "./shell.nix" ]]; then
-    eval "$(lorri direnv)"
+    use nix
 fi
