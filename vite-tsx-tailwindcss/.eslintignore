@@ -1,8 +1,0 @@
-.vscode/*
-dist/*
-assets/*
-node_modules/*
-**/index.html
-**/index.*.html
-**/*.css
-**/assets/*.html
