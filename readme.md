@@ -7,7 +7,16 @@ cd layout
 
 ## Svelte apps
 
-run setup-svelte.sh
+    run setup-svelte.sh
+
+## react and eslintrc
+
+    extends: [
+      'eslint:recommended',
+      'plugin:react/recommended',
+      'plugin:react/jsx-runtime',
+      'plugin:react-hooks/recommended',
+    ],
 
 ### manual install
 
