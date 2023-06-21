@@ -23,14 +23,14 @@ echo "@tailwind base;
 
 sed -i 's#content.*#content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", ],#g' tailwind.config.js
 
-pnpm install --save-dev eslint-config-prettier
+pnpm install --save-dev eslint eslint-config-prettier
 pnpm install --save-dev prettier prettier-plugin-tailwindcss
 pnpm install --save-dev eslint-plugin-react@latest
 
 cp ../.gitignore .
 cp ../.tailwind.config.js tailwind.config.js
 
-cp ../.rettierignore .
+cp ../.prettierignore .
 cp ../.prettierrc.js .
 
  cp ../.eslintignore .

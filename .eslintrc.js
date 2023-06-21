@@ -1,10 +1,14 @@
 module.exports = {
   root: true,
   extends: [
-    "eslint:recommended",
-    "prettier",
+    'eslint:recommended',
+    'plugin:react-hooks/recommended',
+    'prettier',
   ],
-  plugins: ["prettier"],
+  plugins: [
+    'react-refresh',
+    'prettier',
+  ],
   env: {
     browser: true,
     es2022: true,
@@ -23,5 +27,7 @@ module.exports = {
     'no-alert': 'warn',
     // PROBLEMS
     'no-duplicate-imports': 'error',
+    // OTHER
+    'plugin:react-hooks/recommended',
   },
 }
