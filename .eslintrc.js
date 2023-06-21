@@ -7,7 +7,6 @@ module.exports = {
   ],
   plugins: [
     'react-refresh',
-    'prettier',
   ],
   env: {
     browser: true,
@@ -27,7 +26,5 @@ module.exports = {
     'no-alert': 'warn',
     // PROBLEMS
     'no-duplicate-imports': 'error',
-    // OTHER
-    'plugin:react-hooks/recommended',
   },
 }
