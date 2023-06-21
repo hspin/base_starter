@@ -31,7 +31,7 @@ cp ../.gitignore .
 cp ../.tailwind.config.js tailwind.config.js
 
 cp ../.prettierignore .
-cp ../.prettierrc.js .
+cp ../.prettier.config.js .
 
  cp ../.eslintignore .
  cp ../.eslintrc.js my-eslintrc.js
