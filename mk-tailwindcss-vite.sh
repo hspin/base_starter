@@ -32,6 +32,7 @@ cp ../.tailwind.config.js tailwind.config.js
 
 cp ../.prettierignore .
 cp ../.prettier.config.js .
+cp ../.jsconfig.json my-jsconfig.json
 
  cp ../.eslintignore .
  cp ../.eslintrc.js my-eslintrc.js

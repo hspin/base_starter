@@ -26,5 +26,6 @@ module.exports = {
     'no-alert': 'warn',
     // PROBLEMS
     'no-duplicate-imports': 'error',
+    'react/jsx-filename-extension': [2, { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }],
   },
 }
