@@ -4,6 +4,7 @@ DIR=tworktree
 
 mkdir -p ./$DIR/notes
 touch ./$DIR/index.norg
+touch ./$DIR/notes/requirements.norg
 cd ./$DIR
 
 git switch -c dummy

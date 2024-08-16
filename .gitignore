@@ -74,13 +74,13 @@ typings/
 
 # dotenv environment variables file
 # .env
+# .envrc
 .env.keys
 
 # Python Virtual Environment
 venv
 
 # local environment variables file
-.envrc
 
 .direnv
 
@@ -106,3 +106,7 @@ public/bundle.*
 dist/
 
 .zsnippets/
+
+features/
+master/
+qstart/
