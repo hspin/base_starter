@@ -75,7 +75,7 @@ typings/
 # dotenv environment variables file
 # .env
 # .envrc
-.env.keys
+# .env.keys
 
 # Python Virtual Environment
 venv
@@ -106,6 +106,8 @@ public/bundle.*
 dist/
 
 .zsnippets/
+
+.env.keys
 
 features/
 master/
