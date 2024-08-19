@@ -1,6 +1,13 @@
-export DIRENV_EXTRA_VIMRC=$PWD/.vimrc-proj
-layout node
+use flake
+
+dotenv
+
+# layout node
+
+# env_vars_required AWS_PROFILE DB_ENDPOINT
+
+# export DIRENV_EXTRA_VIMRC=$PWD/.vimrc-proj
 # PATH_add ./src/tools
-if [[ -f "./shell.nix" ]]; then
-    use nix
-fi
+# if [[ -f "./shell.nix" ]]; then
+#    use nix
+# fi
