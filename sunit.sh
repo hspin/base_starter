@@ -7,7 +7,7 @@ touch ./$DIR/index.norg
 touch ./$DIR/notes/requirements.norg
 cd ./$DIR
 
-git switch -c dummy
+git switch -c holding
 
 git worktree add features -b features
 
