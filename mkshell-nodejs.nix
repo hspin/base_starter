@@ -12,6 +12,7 @@ nix flake show "https://flakehub.com/f/NixOS/nixpkgs/0.1.0.tar.gz"
             nodejs 
             node2nix 
             yarn 
+            typescript
             nodePackages.pnpm 
             nodePackages.prettier
             nodePackages.prettierd
