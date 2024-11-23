@@ -8,19 +8,16 @@ nix flake show "https://flakehub.com/f/NixOS/nixpkgs/0.1.0.tar.gz"
 
         default = pkgs.mkShell {
           hardeningDisable = ["all"];
-          packages = with pkgs; [ 
-            nodejs 
-            node2nix 
-            yarn 
+          packages = with pkgs; [
+            nodejs
+            yarn
             typescript
-            nodePackages.pnpm 
-            nodePackages.prettier
-            nodePackages.prettierd
-            nodePackages.eslint
+            prettierd
+            tailwindcss-language-server
+            nodePackages.pnpm
             nodePackages.eslint_d
             nodePackages.serve
             nodePackages.typescript-language-server
-            nodePackages.svelte-language-server
           ];
           shellHook = ''
             echo nix shell!
