@@ -1,0 +1,16 @@
+---
+model: openrouter/openai/o4-mini-high
+editor-model: openai/gpt-4.1
+weak-model: openai/gpt-3.5-turbo
+reasoning-effort: high
+edit-format: diff
+architect: true
+timeout: 60
+verify-ssl: true
+max-chat-history-tokens: 32000
+auto-commits: false
+dark-mode: false
+cache-prompts: true
+no-stream: true
+map-tokens: 8192
+alias: [fast:gpt-4o-mini, coder:deepseek/deepseek-coder]
